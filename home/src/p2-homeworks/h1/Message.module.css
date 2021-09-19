@@ -1,0 +1,39 @@
+.wrapper {
+    margin: 30px;
+    display: flex;
+    width: 350px;
+
+}
+
+.styleAvatar {
+    border: solid 2px black;
+    border-radius: 50%;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+}
+
+
+.messege {
+    background: black;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    color: yellow;
+}
+
+.messege::after {
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    left: 20px; bottom: -20px; /* Положение треугольника */
+    border: 20px solid transparent;
+    border-right: 20px solid black;
+    border-bottom: 20px solid black;
+    margin-left: -50px;
+    margin-bottom: 20px;
+}
+
+.time {
+    float: right;
+}
